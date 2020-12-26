@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="mymember">
+	<!-- 
+		map의	 key값				 value값
+			 searchField			검색할 컬럼명 
+			 searchMode				검색할 단어 
+			 start					시작번호 
+			 end					끝번호 
+	-->
+
+	<select id="getMemberCount" parameterClass="map" resultClass="int">
+		select count(*) cnt from mymember
+		<!-- where mem_id = #mem_id# -->
+
+		<!-- 동적 쿼리문을 위해 dynamic태그 이용 -->
+		<dynamic prepend="where">
+			<isNotEmpty property="searchField" prepend="and">
+				$searchField$ like '%'|| #searchWord# ||'%'
+			</isNotEmpty>
+		</dynamic>
+
+	</select>
+
+	<select id="getAllMember" resultClass="memvo" parameterClass="map">
+		select * from
+		(
+			select rownum as rnum, a.* from
+		(
+			select mem_id, mem_name, mem_tel, mem_addr from mymember
+		<dynamic prepend="where">
+			<isNotEmpty property="searchField" prepend="and">
+				$searchField$ like '%'|| #searchWord# ||'%'
+			</isNotEmpty>
+		</dynamic>
+		)a
+			
+			where rownum &lt;= #end#
+		)
+			where rnum &gt; #start#
+	</select>
+
+
+
+</sqlMap>	

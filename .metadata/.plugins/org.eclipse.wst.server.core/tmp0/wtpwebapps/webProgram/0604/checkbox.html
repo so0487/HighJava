@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>checkBox(체크박스)</title>
+	</head>
+	<body>
+		<!-- 
+		체크박스 :	채크가 가능한 박스
+				다중선택이 가능하다
+				name 속성을 동일하게 작성하더라도 체크 된 모든 파라미터들이 전송(제출)
+				페이지 로딩시 미리 체크하는 방법은 checked라는 속성을 준다.
+		 -->
+		<form>
+			<input type="checkbox" name="fruit" value="apple">사과<br>
+			<input type="checkbox" name="fruit" value="banana" checked>바나나<br>	<!-- checked : 미리 체크가 되어있다 -->
+			<input type="checkbox" name="fruit" value="tangerine">귤<br>
+			<input type="submit">
+		</form>
+	</body>
+</html>

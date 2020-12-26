@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>회원가입</title>
+	</head>
+	<body>
+		<form action="result.jsp">
+			<fieldset>
+				<legend>회원가입</legend>
+				<table border="1">
+					<tr></tr>
+						<td>ID</td>
+						<td><input type="text" name="name"></td>
+					<tr></tr>
+						<td>PW</td>
+						<td><input type="password" name="pwd"></td>
+					<tr></tr>
+						<td>PW확인</td>
+						<td><input type="password" name="pwdcheck"></td>
+					<tr></tr>
+						<td>성별</td>
+						<td><label for="m">남</label><input type="radio" id="m" name="gender" value="male">
+							<label for="f">여</label><input type="radio" id="f" name="gender" value="female">						
+						</td>
+					<tr></tr>
+						<td>취미</td>
+						<td><label for="ex">운동</label><input type="checkbox" id="ex" name="hobby" value="exercise">
+							<label for="tr">여행</label><input type="checkbox" id="tr" name="hobby" value="trip">						
+							<label for="bo">독서</label><input type="checkbox" id="bo" name="hobby" value="book">						
+						</td>
+					<tr></tr>
+						<td>생일</td>
+						<td>
+							<input type="date" name="date">
+						</td>
+					<tr></tr>
+						<td>나이</td>
+						<td><input type="text" name="age"></td>
+					<tr></tr>
+						<td>이메일</td>
+						<td><input type="text" name="email">
+						@
+						<select name=email>
+							<option value="naver">naver.com</option>
+							<option value="daum">daum.net</option>
+							<option value="google">google.com</option>
+						</td>
+					<tr></tr>
+						<td>메모</td>
+						<td><textarea rows="5" cols="50" name="memo"></textarea></td>
+				</table>
+		
+				<input type="submit" value="회원가입">
+				<input type="reset" value="새로고침">
+		</form>
+
+	</body>
+</html>

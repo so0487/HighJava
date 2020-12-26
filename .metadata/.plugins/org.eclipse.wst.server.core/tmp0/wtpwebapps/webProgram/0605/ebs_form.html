@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ebs_form(회원가입)</title>
+		<style>
+		tr td:first-child{
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body>
+		<h2>정보입력 및 본인확인</h2>
+		<form action="result_ebs.jsp">
+			<fieldset>
+				<legend>회원가입</legend>
+				<table border="1">
+					<tr></tr>
+						<td>아이디</td>
+						<td><input type="text" name="id" autocomplete="off" autofocus>
+						<input type="button" name="idcheck" value="중복확인"></td>
+					<tr></tr>
+						<td>비밀번호</td>
+						<td><input type="password" name="pwd" placeholder="비밀번호"></td>
+					<tr></tr>
+						<td>비밀번호 확인</td>
+						<td><input type="password" name="pwdcheck"></td>
+					<tr></tr>
+						<td>이름</td>
+						<td><input type="text" name = "name" autocomplete="off"></td>
+						<textarea readonly>메모입니다.</textarea>
+						</td>
+					<tr></tr>
+						<td>성별</td>
+						<td><input type="radio" id="m" name="gender" value="male"><label for="m">남성</label>
+							<input type="radio" id="f" name="gender" value="female"><label for="f">여성</label>
+							<input type="checkbox" id="ch" name="agree" value="agree"><label for="ch">선택정보(성별) 수집 및 이용 동의</label>						
+						</td>
+				<!-- 	<tr></tr>
+						<td>취미</td>
+						<td><label for="ex">운동</label><input type="checkbox" id="ex" name="hobby" value="exercise">
+							<label for="tr">여행</label><input type="checkbox" id="tr" name="hobby" value="trip">						
+							<label for="bo">독서</label><input type="checkbox" id="bo" name="hobby" value="book">						
+						</td> -->
+					<tr></tr>
+						<td>생년월일</td>
+						<td>
+							<!--<input type="date" name="date"> 달력형태로 출력-->
+							<select name="bir_year">
+								<option value="1992">1992</option>
+								<option value="1993">1993</option>
+								<option value="1994">1994</option>
+								<option value="1995">1995</option>
+								<option value="1996">1996</option>
+							</select>년
+							<select name="bir_mon">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>월
+							<select name="bir_day">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							
+							</select>일
+						</td>
+<!-- 					<tr></tr>
+						<td>나이</td>
+						<td><input type="text" name="age"></td> -->
+					<tr></tr>
+						<td>이메일</td>
+						<td><input type="text" name="email" required>@
+						<select name="domain">
+							<option value="naver">naver.com</option>
+							<option value="daum">daum.net</option>
+							<option value="google">google.com</option>
+						</select><br>
+						아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.
+						</td>
+						<tr></tr>
+							<td>휴대폰</td>
+							<td><input type="tel" name="tel" required pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"><br>
+							<input type="checkbox" id="ph" name="phagree" value="phone">
+							<label for="ph">선택정보(휴대폰) 수집 및 이용 동의</label><br>
+							아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.
+							</td>
+							
+						<tr></tr>
+							<td>인증방법</td>
+							<td><input type="radio" id="p" name="check" value="phoneCheck"><label for="p">휴대폰</label>
+							<input type="radio" id="e" name="check" value="emailCheck"><label for="e">이메일</label>
+							<input type="button" value="인증"><br>
+							휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.
+							</td>
+						<tr></tr>
+							<td>인증번호</td>
+							<td>
+							<input type="text" name="code">
+							<input type="button" value="확인">
+							</td>
+							
+<!-- 					<tr></tr>
+						<td>메모</td>
+						<td><textarea rows="5" cols="50" name="memo"></textarea></td> -->
+						
+						<tr></tr>
+							<td colspan="2">
+								<input type="submit" value="확인">
+							</td>
+				</table>
+		
+				<!--
+				<input type="reset" value="새로고침">
+				-->
+		</form>
+
+	</body>
+</html>

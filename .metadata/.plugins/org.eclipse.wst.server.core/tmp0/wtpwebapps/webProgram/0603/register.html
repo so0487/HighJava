@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+	</head>
+	<body>
+		<!--
+		from태그 : 입력양식을 서버로 전송하는 태그
+			method속성 : 	1)post방식:	사용자가 입력한 데이터를 URL(action)주소에 붙이지 않고
+									HTTP Request헤더에 포함시켜 전송하는 방식
+						2)get방식 : 	URL(action)주소 뒤에 파라미터를 붙여서 데이터를 전달하는 방식
+						
+								**파라미터 : URL에서 ?뒤에 데이터를 뜻한다.
+									
+			action속성 : 입력을 처리하는 서버스크립트의 주소를 적는다.
+		 -->
+		<form action="result.html" method="post">
+		<!-- action을 통해 result.html로 이동 -->
+		<!-- method="post" 주소 뒤에 ?붙은 것을 삭제(method="get"이 기본 get일 경우 ?가 바꾸지 않는다.) -->
+			ID:<input type="text" name="id"><br>
+			PW:<input type="password" name="pwd"><br>
+			<input type="submit">
+		</form>
+	</body>
+</html>

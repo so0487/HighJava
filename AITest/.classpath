@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/assistant-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/core-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/logging-interceptor-3.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/okhttp-3.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/okhttp-urlconnection-3.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="lib/speech-to-text-6.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/text-to-speech-6.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/visual-recognition-6.2.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

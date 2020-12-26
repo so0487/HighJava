@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>audio태그</title>
+	</head>
+	<body>
+		<audio src="../multi/old_pop.mp3" controls></audio>
+		<!-- 실행을 위해 controls가 필요 -->
+		<video src="../multi/trailer.mp4" controls poster="../img/galaxy.jpg"></video>
+		<!-- poster : 썸네일 같은 역할 -->
+		
+		<hr>
+		<!-- 위에서 부터 파일 형식을 차례대로 검사하여 플레이 한다. -->
+		<audio controls>
+			<source src="../multi/trailer.ogv">
+			<source src="../multi/trailer.webm">
+			<source src="../multi/trailer.mp4">
+		
+		</audio>
+		
+		<video src="../multi/movie.ogv" controls>
+		
+		이 브라우저에서는 지원하지 않습니다.
+		
+		</video>
+	</body>
+</html>

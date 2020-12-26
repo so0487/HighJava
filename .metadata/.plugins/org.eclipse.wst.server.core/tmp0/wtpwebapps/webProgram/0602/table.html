@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>table(테이블 태그)</title>
+	</head>
+	<body>
+		<table border="1"> 
+		<!-- 
+			하나의 행을 표시하는 태그<tr></tr>
+			하나의 칸(데이터)를 표시하는 태그<td></td>
+			각 열의 헤더(열의 제목)의 경우<th></th>
+			
+		 -->
+			<tr>
+				<td>정수영</td>
+				<td>강대윤</td>
+			</tr>
+			<tr>
+				<td>박철용</td>
+				<td>천의주</td>
+			</tr>
+		</table>
+		
+		
+		<table border="1">
+			<tr>
+				<th>이름</th>
+				<th>성적</th>
+			</tr>
+			<tr>
+				<td>정수영</td>
+				<td>80점</td>
+			</tr>
+			
+			<tr>
+				<td>김00</td>
+				<td>60점</td>
+			</tr>
+		</table>
+		
+		
+		
+		<table border="1">
+			<tr>
+				<th>100</th>
+				<th>200</th>
+				<th>300</th>
+			</tr>
+			
+			<tr>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+			</tr>
+						
+		</table>
+		
+		
+		<!-- 
+		행병합	:	rowspan	행이병합(합친다)
+		열병합	:	colspan	열이 병합되는 것
+		
+		자기자신의 칸을 포함해서 합칠 행/열의 갯수를 숫자로 기입
+		rowsapn="2"	:	나 자신을 포함해서 2행을 합친다
+		colspan="3"	: 	나 자신을 포함해서 3칸(열)을 합친다.
+		 -->
+		
+		<table border="1">
+			<tr>
+				<th>100</th>
+				<th>200</th>
+				<th>300</th>
+			</tr>
+			
+			<tr>
+				<td colspan="3">100</td>
+
+			</tr>
+			<tr>
+				<td rowspan="2">100</td>
+				<td rowspan="2">200</td>
+				<td rowspan="2">300</td>
+			</tr>
+			<tr>
+			</tr>			
+		</table>
+		
+		
+		
+		<table border="1">
+			<caption>최근에 본 영화들</caption>
+			<tr>
+				<th>영화제목</th>
+				<th>연도</th>
+				<th>감독</th>
+				<th>평가</th>
+				
+			</tr>
+			
+			<tr>
+			
+				<td>라이프오프파이</td>
+				<td>2013</td>
+				<td>이안</td>
+				<td>5</td>
+			</tr>
+			<tr>
+			
+				<td>레미제라블</td>
+				<td>2013</td>
+				<td>이안</td>
+				<td>5</td>
+			</tr>
+			<tr>
+			
+				<td>신세계</td>
+				<td>2013</td>
+				<td>이안</td>
+				<td>5</td>
+			</tr>
+		
+		
+		
+		</table>
+		
+		
+	</body>
+</html>

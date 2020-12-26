@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="28.0" layoutY="55.0" prefHeight="320.0" prefWidth="245.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="327.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <PieChart />
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="55.0" prefHeight="320.0" prefWidth="245.0">
+         <children>
+            <BarChart>
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </VBox>
+      <TextField layoutX="160.0" layoutY="24.0" prefHeight="23.0" prefWidth="370.0" />
+      <Label layoutX="92.0" layoutY="28.0" text="영화명" />
+      <Label layoutX="91.0" layoutY="379.0" prefHeight="15.0" prefWidth="75.0" text="성별 예매율" />
+      <Label layoutX="393.0" layoutY="379.0" prefHeight="15.0" prefWidth="90.0" text="연령대별 예매율" />
+   </children>
+</AnchorPane>
